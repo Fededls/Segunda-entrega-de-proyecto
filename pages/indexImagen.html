@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro-Shop</title>
+    <!--Estilos Bootstrap Local-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!--Incluyendo Favicon-->
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <!--Incluyendo CSS externo-->
+    <link rel="stylesheet" href="../css/estilos.css"/>
+</head>
+<body id="gridAreas">
+     <!--Header del sitio-->
+     <header class="container, pocoMargen, border">
+        <!--Menu principal-->
+        <!--Menu con navegación y buscador Bootstrap-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+            <div class="container-fluid">
+                <h1 class="tituloDegradadoAnimado">ElectroShop</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">:::</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                        <li><a class="dropdown-item" href="">Audio y video</a></li>
+                        <li><a class="dropdown-item" href="">Climatización</a></li>
+                        <li><a class="dropdown-item" href="">Hogar</a></li>
+                        <li><a class="dropdown-item" href="">Más categorias</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <form>
+                    <input class="form-control" type="text" placeholder="Buscar" aria-label="Buscar">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        </header>
+       <!--Menu secundario-->
+       <aside id="basicSidebar" class="pmd-sidebar bg-light pmd-z-depth, menuSecundario, border" role="navigation">
+        <ul class="nav flex-column pmd-sidebar-nav, , modificarMenuLateral">         
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <span class="media-body">Inicio</span>
+                </a>
+            </li>               
+            <li class="nav-item">
+                <a class="nav-link active" href="">
+                    <span class="media-body">Productos</span>
+                </a>
+            </li>              
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    <span class="media-body">Ingreso</span>
+                </a>
+            </li>               
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    <span class="media-body">Empresa</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    <span class="media-body">Contacto</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!--Sector central-->
+    <section id="central" class="gridCentralSections">
+        <div>
+            <a href=""><img class="formaProducto" src="../images/oferta1.jpg" alt="Oferta1"></a>
+            <p class="subtitleProd">Tv Smart 32 - $7900</p>
+        </div>
+        <div>
+            <a href=""><img class="formaProducto" src="../images/oferta1.jpg" alt="Oferta1"></a>
+            <p class="subtitleProd">Tv Smart 32 - $7900</p>
+        </div>
+        <div>
+            <a href=""><img class="formaProducto" src="../images/oferta1.jpg" alt="Oferta1"></a>
+            <p class="subtitleProd">Tv Smart 32 - $7900</p>
+        </div>
+        <div>
+            <a href=""><img class="formaProducto" class="formaProducto" src="../images/oferta1.jpg" alt="Oferta1"></a>
+            <p class="subtitleProd">Tv Smart 32 - $7900</p>
+        </div>
+        <div>
+            <a href=""><img class="formaProducto" src="../images/oferta1.jpg" alt="Oferta1"></a>
+            <p class="subtitleProd">Tv Smart 32 - $7900</p>
+        </div>
+        <div>
+            <a href=""><img class="formaProducto" src="../images/oferta1.jpg" alt="Oferta1"></a>
+            <p class="subtitleProd">Tv Smart 32 - $7900</p>
+        </div>
+    </section>
+    <!--Sector Info y publicidad-->
+    <aside id="publicidad1" class="border">
+        <img class="bannerPublicidad" src="../images/banner1.jpg" alt="Publicidad">
+    </aside>
+    <aside id="info" class="border">
+        <div>
+            <h4>Casa central</h4><br>
+            <p>Avda. Gorlero 1234 - Punta del Este</p><br>
+            <h4>Horarios de atención</h4><br>
+            <p>Lun. a Vie. 9:00 - 19:00hs
+            Sab. 9:00 - 13:00hs</p>
+        </div>
+    </aside>
+    <aside id="publicidad2" class="border">
+        <img class="bannerPublicidad" src="../images/banner2.jpg" alt="Publicidad">
+    </aside>
+    <!--Javascript de Bootstrap-->
+    <script src="../js/bootstrap.js"></script>
+    <!--Pie de pagina-->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:rgb(37, 37, 37)">
+          <a class="text-white" href="">©Copyright 2022 Fdls. Todos los derechos reservados.</a>
+        </div>
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,1014 @@
+/*Comentarios CSS*/
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*Agregar fuente descargada de Google Fonts*/
+@font-face {
+    font-family:"Arvo";
+    src: url("../fonts/Arvo/Arvo-Regular.ttf");
+}
+
+.border {
+    border: 1px solid gray;
+ }
+ /*Nombrar las areas*/
+header{
+    grid-area: menu;
+    background-image: linear-gradient(#1883ba, lightskyblue);
+    text-align: center;
+    padding: 2px;
+}
+/*Pie de pagina*/
+footer{
+    grid-area: pie;
+    text-align: center;
+    padding: 2px;
+}
+#central{
+    grid-area: productos;
+    padding: 2px;
+}
+#publicidad1{
+    grid-area: banner1; 
+    padding: 10px;
+}
+#publicidad2{
+    grid-area: banner2;
+    padding: 10px;
+}
+.bannerPublicidad{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.negrita{
+    font-weight: bold;
+}
+.boton1{
+    padding: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+.centrar{
+    text-align: center;
+}
+.pocoMargen{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/*Menu Flex*/
+.flexMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.centralFlex {
+    display: flex;
+    flex-flow:nowrap;
+}
+/*Etiquetas simples y padres e hijos*/
+article {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+}
+section div img{
+    margin: 12% 12%;
+    width: 80%;
+    height: auto;
+    border-left: solid 2px peru;
+    border-top: solid 2px peru;
+    border-right: solid 5px orangered;
+    border-bottom: solid 5px orangered;
+}
+section h3{
+    color:orangered;
+}
+fieldset legend{
+    background-color: #fff;
+    color:darkblue;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 12px;
+}
+fieldset label{
+    font-size: 10px;
+    color: darkred;
+}
+fieldset input{
+    font-size: 10px;
+    height: 20px;
+}
+fieldset select{
+    font-size: 10px;
+    height: 20px;
+}
+fieldset span{
+    font-size: 10px;
+}
+.setImage{
+    margin: 12% 12%;
+    width: 40%;
+    height: auto;
+}
+/*Animación*/
+.ofertaAnimada1{
+    animation-name: tipo1;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+}
+.ofertaAnimada2{
+    animation-name: tipo2;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+}
+.ofertaAnimada3{
+    animation-name: tipo3;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+}
+.ofertaAnimada4{
+    animation-name: tipo4;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+}
+.bannerAnimado1{
+    animation-name: banner1;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+.bannerAnimado2{
+    animation-name: banner2;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+/*Keyframes para iniciar animación*/
+@keyframes tipo1{
+    /*Estructura compleja*/
+    0%/*inicio*/{
+        transform: translate(-300px, -300px);
+        border-radius: 100%;
+    }
+    20%{border-radius: 80%;}
+    40%{border-radius: 60%;}
+    60%{border-radius: 40%;}
+    80%{border-radius: 20%;}
+    100%{border-radius: 5%;}
+}
+@keyframes tipo2{
+    /*Estructura compleja*/
+    0%/*inicio*/{
+        transform: translate(300px, -300px);
+        border-radius: 100%;
+    }
+    20%{border-radius: 80%;}
+    40%{border-radius: 60%;}
+    60%{border-radius: 40%;}
+    80%{border-radius: 20%;}
+    100%{border-radius: 5%;}
+}
+@keyframes tipo3{
+    /*Estructura compleja*/
+    0%/*inicio*/{
+        transform: translate(-300px, 300px);
+        border-radius: 100%;
+    }
+    20%{border-radius: 80%;}
+    40%{border-radius: 60%;}
+    60%{border-radius: 40%;}
+    80%{border-radius: 20%;}
+    100%{border-radius: 5%;}
+}
+@keyframes tipo4{
+    /*Estructura compleja*/
+    0%/*inicio*/{
+        transform: translate(300px, 300px);
+        border-radius: 100%;
+    }
+    20%{border-radius: 80%;}
+    40%{border-radius: 60%;}
+    60%{border-radius: 40%;}
+    80%{border-radius: 20%;}
+    100%{border-radius: 5%;}
+}
+/*Transiciones*/
+.formaProducto{
+    transition: all, 0.5s;
+}
+.formaProducto:hover{
+    border-radius: 50%;
+    border: solid 2px darkblue;
+}
+.modificarMenuLateral{
+    background-color: khaki;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*----RESPONSIVE----*/
+/*DESKTOP*/
+@media (min-width: 1024px){
+    
+    body {
+        height: 100vh;
+        margin: 5px;
+        font-family:"Arvo", sans-serif;
+        background-color:goldenrod; 
+        background-image: linear-gradient(to bottom, goldenrod, khaki, goldenrod);  
+    }
+    body section span{
+        justify-self:center;
+        align-self:bottom;
+        color:darkred;
+        font-weight: bold;
+    }
+    /* GRIDS POR AREAS */
+    #gridAreas{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 8fr 43fr 43fr 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    #gridAreasOfertas{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 8fr 43fr 43fr 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    #gridAreasProductos{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 8fr 500px 500px 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    #gridAreasEmpresa{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 8fr 43fr 43fr 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    #gridAreasLog{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 8fr 43fr 43fr 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+     /*titulo degradado animado*/
+     .tituloDegradadoAnimado {
+    font-size: 1.7rem;
+    font-weight: bold;
+    animation-name: radiacion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background: linear-gradient(-45deg, darkred, red, blue, darkblue);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    /*Animación*/
+    @keyframes radiacion {
+        0% { background-position: 0 50% }
+        50% { background-position: 100% 50% }
+        100% { background-position: 0 50% }
+    }
+    .tituloGrande{
+        font-size: 22px;
+        color: rgb(206, 6, 6);
+        text-orientation: sideways-right;
+    }
+    /*Menu principal*/
+    nav{ 
+        padding: 5px;
+        font-size: 15px;
+    }
+    /*Menu lateral*/
+    #menuSecundario{
+        grid-area: menu2;   
+    }
+    aside ul li{
+        padding: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        color:seagreen
+    }
+    aside a{
+        color:darkslateblue; 
+        text-align: center;
+        text-decoration:none;
+        width: 80%;
+    }
+    /*Pseudoclase*/
+    aside ul li:hover{
+        font-size: 150%;
+    }
+   /* aside a:link{
+        color: red;
+    }
+    aside a:visited{
+        color: gray;
+    }
+    aside a:active{
+        color: green;
+    }
+    img:active{
+        opacity: 0.5;
+    }
+    div:not(.padre){
+        border: solid 5px #e73c7e;
+    }
+    a::before{
+        content:"AA";
+        color: red;
+    }
+    a::after{
+        content:"BB";
+        color: #e73c7e;
+    }*/
+    /*banner lateral Info*/
+    #info{
+        grid-area: info;  
+        padding: 10px;
+        font-size: 15px;
+        font-style: italic;
+        color:rgb(8, 114, 8);
+    }
+    /*Grillas centrales*/
+    .gridCentral{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 38fr 11fr 38fr 11fr;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+    }
+    .gridCentralSections{
+        display: grid;
+        grid-template-columns:repeat(3, 33fr);
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    .gridCentralProductos{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:3% 22% 3% 22% 3% 22% 3% 22% ;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    .gridCentralArticulos{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    .gridCentralSimple{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    .gridCentralEmpresa{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 33% 33% 33%;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    /*Formato de contenido central*/
+    .subtitleProd{
+        text-align: center;
+        color:rgb(206, 6, 6);
+        font-weight: bold;  
+    }
+    .subtitleProdCentral{
+        font-size: 20px; 
+        font-style: italic;
+        text-align: center;
+        color:rgb(206, 6, 6);
+        font-weight: bold;   
+    }
+    .articuloType1{
+        justify-self: center;
+        width: 40%;
+        height: auto;
+    }
+    .articuloType2{
+        margin-left: 10%;
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        font-style: italic;
+        color:darkslategrey;
+    }
+    .avatar{
+        width: 100px;
+        height: auto;
+        text-align: center;
+    }
+    section a img{
+        margin-left: 12%;
+        width: 70%;
+        height: auto;
+        border-left: solid 2px lightskyblue;
+        border-top: solid 2px lightskyblue;
+        border-right: solid 5px royalblue;
+        border-bottom: solid 5px royalblue;
+    }
+    fieldset{
+        width: 400px; 
+    }
+    fieldset textarea{
+        width: 400px;
+        height: 100px;
+    }
+    .gradienteCentral{
+        background-image: radial-gradient(white, gray);
+    }
+    /*Animación*/
+    @keyframes banner1{
+        /*Estructura compleja*/
+        0%/*inicio*/{
+            transform: translate(800px);
+            width: 150%;
+        }
+    }
+    @keyframes banner2{
+        /*Estructura compleja*/
+        0%/*inicio*/{
+            transform: translate(-1500px);
+            width: 150%;
+        }
+    }
+}
+
+ /*TABLET*/
+ @media (min-width: 481px) and (max-width: 1023px){
+ 
+    body {
+        height: 100vh;
+        margin: 5px;
+        font-family:"Arvo", sans-serif;
+        background-image: linear-gradient(to bottom, limegreen, greenyellow, limegreen);    
+    }
+    body section span{
+        justify-self:center;
+        align-self:bottom;
+        color:firebrick;
+        font-weight: bold;
+    }
+    /* GRIDS POR AREAS */
+    #gridAreas{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 8fr 43fr 43fr 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    #gridAreasOfertas{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 8fr 43fr 43fr 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    #gridAreasProductos{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 8fr 500px 500px 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    #gridAreasEmpresa{
+        display: grid;
+        grid-template-areas:
+        /* 3 columnas y 4 filas */
+        "menu menu menu"/* fila 1 */
+        "menu2 productos banner1"/* fila 2 */
+        "info productos banner2"/* fila 3 */
+        "pie pie pie"/* fila 4 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 15% auto 15%;
+        grid-template-rows: 8fr 43fr 43fr 6fr;
+        grid-column-gap: 4px;
+        grid-row-gap: 4px;
+    }
+    /*titulo degradado animado*/
+    .tituloDegradadoAnimado {
+    font-size: 1.8rem;
+    font-weight: bold;
+    animation-name: radiacion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation: fluido 5s ease-in-out infinite; */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    /*Animación*/
+    @keyframes radiacion {
+        0% { background-position: 0 50% }
+        50% { background-position: 100% 50% }
+        100% { background-position: 0 50% }
+    }
+    .tituloGrande{
+        font-size: 18px;
+        color: rgb(206, 6, 6);
+        text-orientation: sideways-right;
+    }
+    /*Menu principal*/
+    nav{
+        padding: 3px;
+        font-size: 12px;
+    }
+    /*Menu lateral*/
+    #menuSecundario{
+        grid-area: menu2;   
+    }
+    aside ul li{
+        padding: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /*Pseudoclase*/
+    aside ul li:hover{
+        font-size: 120%;
+    }
+    aside a{
+        color: rgb(8, 114, 8);
+        text-align: center;
+        text-decoration:none;
+        width: 80%;
+    }
+    /*banner lateral Info*/
+    #info{
+        grid-area: info;  
+        padding: 5px;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: bold;
+        color:rgb(51, 43, 107);
+    }
+    /*Grillas centrales*/
+    .gridCentral{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 40fr 10fr 40fr 10fr;
+        border: 2px solid red;
+        background-image: radial-gradient(gray, white);
+    }
+    .gridCentralProductos{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:3% 22% 3% 22% 3% 22% 3% 22% ;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    .gridCentralSections{
+        display: grid;
+        grid-template-columns:repeat(3, 33fr);
+        justify-self: center;
+        border: 2px solid red;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    .gridCentralArticulos{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-self: center;
+        border: 2px solid red;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    .gridCentralSimple{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(gray, white);
+        width: 100%;
+    }
+    /*Formato de contenido central*/
+    .subtitleProd{
+        text-align: center;
+        color:rgb(206, 6, 6);
+        font-weight: bold;  
+    }
+    .subtitleProdCentral{
+        font-size: 14px; 
+        font-style: italic;
+        text-align: center;
+        color:green;
+        font-weight: bold;   
+    }
+    .articuloType1{
+        justify-self: center;
+        width: 40%;
+        height: auto;
+    }
+    .articuloType2{
+        margin-left: 10%;
+        width: 100%;
+        height: auto;
+        font-size: 11px;
+        font-style: italic;
+        color:black;
+    }
+    .avatar{
+        width: 100px;
+        height: auto;
+        text-align: center;
+    }
+    section a img{
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
+        border-left: solid 2px lightskyblue;
+        border-top: solid 2px lightskyblue;
+        border-right: solid 5px royalblue;
+        border-bottom: solid 5px royalblue;
+    }
+    fieldset{
+        width: 400px; 
+    }
+    fieldset textarea{
+        width: 400px;
+        height: 80px;
+    }
+     /*Animación*/
+     @keyframes banner1{
+        /*Estructura compleja*/
+        0%/*inicio*/{
+            transform: translate(800px);
+            width: 150%;
+        }
+    }
+    @keyframes banner2{
+        /*Estructura compleja*/
+        0%/*inicio*/{
+            transform: translate(-1500px);
+            width: 150%;
+        }
+    }
+}
+
+/*SMARTPHONE*/
+@media (max-width: 480px){
+ 
+    body {
+        height: 100vh;
+        margin: 0px;
+        font-family:"Arvo", sans-serif;
+        background-color:orchid  ;
+        background-image: linear-gradient(to bottom, mediumpurple, orchid, mediumpurple);    
+    }
+    body section span{
+        justify-self:center;
+        align-self:bottom;
+        color:darkblue;
+        font-size: 12px;
+        font-weight: bold;
+    }
+     /* GRIDS POR AREAS */
+     #gridAreas{
+        display: grid;
+        grid-template-areas:
+        /* 2 columnas y 6 filas */
+        "menu menu"/* fila 1 */
+        "menu2 productos"/* fila 2 */
+        "banner1 productos"/* fila 3 */
+        "banner2 productos"/* fila 4 */
+        "info productos"/* fila 5 */
+        "pie pie"/* fila 6 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 25% auto;
+        grid-template-rows: 8fr 22fr 300px 450px 450px 6fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    #gridAreasOfertas{
+        display: grid;
+        grid-template-areas:
+        /* 2 columnas y 6 filas */
+        "menu menu"/* fila 1 */
+        "menu2 productos"/* fila 2 */
+        "banner1 productos"/* fila 3 */
+        "banner2 productos"/* fila 4 */
+        "info productos"/* fila 5 */
+        "pie pie"/* fila 6 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 25% auto;
+        grid-template-rows: 8fr 22fr 22fr 22fr 22fr 6fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    #gridAreasProductos{
+        display: grid;
+        grid-template-areas:
+        /* 2 columnas y 6 filas */
+        "menu menu"/* fila 1 */
+        "menu2 productos"/* fila 2 */
+        "banner1 productos"/* fila 3 */
+        "banner2 productos"/* fila 4 */
+        "info productos"/* fila 5 */
+        "pie pie"/* fila 6 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 25% auto;
+        grid-template-rows: 8fr 22fr 22fr 22fr 22fr 6fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    #gridAreasEmpresa{
+        display: grid;
+        grid-template-areas:
+        /* 2 columnas y 6 filas */
+        "menu menu"/* fila 1 */
+        "menu2 productos"/* fila 2 */
+        "banner1 productos"/* fila 3 */
+        "banner2 productos"/* fila 4 */
+        "info productos"/* fila 5 */
+        "pie pie"/* fila 6 */
+        ;
+        /* Dimensiones */
+        grid-template-columns: 25% auto;
+        grid-template-rows: 5fr 10fr 20fr 250px 250px 250px 5fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+    }
+    .tituloDegradadoAnimado {
+    font-size: 2rem;
+    font-weight: bold;
+    animation-name: radiacion;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background: linear-gradient(80deg, yellow,orange,darkred);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    /*Animación*/
+    @keyframes radiacion {
+        0% { background-position: 0 50% }
+        50% { background-position: 100% 50% }
+        100% { background-position: 0 50% }
+    }
+    .tituloGrande{
+        font-size: 22px;
+        color: rgb(206, 6, 6);
+        text-orientation: sideways;
+    }
+     /*Menu principal*/
+     nav{
+        padding: 0px;
+        font-size: 12px;
+    }
+    /*Menu lateral*/
+    #menuSecundario{
+        grid-area: menu2;   
+    }
+    aside ul li{
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    /*Pseudoclase*/
+    aside ul li:hover{
+        font-size: 105%;
+    }
+    aside a{
+        color:rgb(206, 6, 6);
+        text-align: center;
+        text-decoration:none;
+        width: 80%;
+    }
+    /*banner lateral e Info*/
+    #info{
+        grid-area: info;  
+        padding: 2px;
+        font-size: 10px;
+        font-weight: bold;
+        color:darkred
+    }
+    /*Grillas centrales*/
+    .gridCentral{
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr 1fr;
+        border: 2px solid red;
+        background-image: radial-gradient(white, rgb(255, 255, 166));
+    }
+    .gridCentralProductos{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:3% 22% 3% 22% 3% 22% 3% 22% ;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(white, rgb(255, 255, 166));
+        width: 100%;
+    }
+    .gridCentralSections{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr;
+        justify-self: center;
+        border: 2px solid red;
+        background-image: radial-gradient(white, rgb(255, 255, 166));
+        width: 100%;
+        font-size: 20px;
+    }
+    .gridCentralArticulos{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 2fr;
+        justify-self: center;
+        border: 4px solid midnightblue;
+        background-image: radial-gradient(white, rgb(255, 255, 166));
+        width: 100%;
+    }
+    .gridCentralSimple{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-self: center;
+        border: 4px solid gray;
+        background-image: radial-gradient(white, rgb(255, 255, 166));
+        width: 100%;
+    }
+    /*Formato de contenido central*/
+    .subtitleProd{
+        text-align: center;
+        color:rgb(88, 3, 109);
+        font-weight: bold;  
+    }
+    .subtitleProdCentral{
+    font-size: 18px; 
+    font-style: italic;
+    text-align: center;
+    color:darkred;
+    font-weight: bold;   
+    }
+    .articuloType1{
+        justify-self: center;
+        width: 100%;
+        height: auto;
+    }
+    .articuloType2{
+        margin-left: 10%;
+        margin-top: 5%;
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        font-style: italic;
+        color:navy;
+    }
+    .avatar{
+        width: 200px;
+        height: auto;
+        text-align: center;
+    }
+    section a img{
+        margin-left: 10%;
+        width: 70%;
+        height: auto;
+        border-left: solid 2px lightskyblue;
+        border-top: solid 2px lightskyblue;
+        border-right: solid 5px royalblue;
+        border-bottom: solid 5px royalblue;
+    }
+    fieldset{
+        width: 260px; 
+     }
+    fieldset textarea{
+        width: 200px;
+        height: 50px;
+    }
+     /*Animación*/
+     @keyframes banner1{
+        /*Estructura compleja*/
+        0%/*inicio*/{
+            transform: translate(300px);
+            width: 150%;
+        }
+    }
+    @keyframes banner2{
+        /*Estructura compleja*/
+        0%/*inicio*/{
+            transform: translate(-700px);
+            width: 150%;
+        }
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
